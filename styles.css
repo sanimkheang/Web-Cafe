@@ -6,11 +6,11 @@
 
 :root {
     /* Studio Ghibli Inspired Color Palette */
-    --sage-green: #8FBC8F;
+    --sage-green: #e1fb96;
     --burlywood: #DEB887;
-    --peru-brown: #CD853F;
+    --peru-brown: #000000;
     --cornsilk: #FFF8DC;
-    --dark-olive: #2F4F2F;
+    --dark-olive: #1f611f;
     --moccasin: #FFE4B5;
     
     /* Additional colors for depth */
@@ -20,9 +20,9 @@
     --hover-shadow: rgba(47, 79, 47, 0.2);
     
     /* Typography */
-    --font-handwritten: 'Dancing Script', 'Kalam', cursive;
-    --font-body: 'Open Sans', sans-serif;
-    --font-accent: 'Kalam', cursive;
+    --font-handwritten: 'Biro Script Plus', 'Kalam', cursive;
+    --font-body: 'Dongle', sans-serif;
+    --font-accent: 'Biro Script Plus', cursive;
     
     /* Spacing */
     --space-xs: 0.5rem;
@@ -73,10 +73,10 @@ body {
 }
 
 .logo .cafe-name {
-    font-family: var(--font-handwritten);
+    font-family:Ruda Two;
     font-size: 2.5rem;
     font-weight: 700;
-    color: var(--warm-white);
+    color:#006a3e;
     margin-bottom: -0.5rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -84,9 +84,10 @@ body {
 .logo .cafe-tagline {
     font-family: var(--font-accent);
     font-size: 0.9rem;
-    color: var(--moccasin);
-    font-weight: 300;
-    margin-left: var(--space-xs);
+    font-size: 1rem;
+    color: black;
+    font-weight: 500;
+    margin-left: var(--space-sm);
 }
 
 .nav-menu {
