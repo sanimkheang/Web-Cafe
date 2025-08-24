@@ -47,7 +47,7 @@
     --hover-shadow: rgba(47, 79, 47, 0.2);
 
     /* Typography */
-    --font-handwritten: 'Biro Script', cursive;
+    --font-handwritten: 'Biro Script';
     --font-body: 'Dongle', sans-serif;
     --font-accent: 'Biro Script';
 
@@ -70,7 +70,7 @@ body {
     font-family: var(--font-body);
     font-size: 1.4rem;
     /* Increased base font size for Dongle */
-    background-color: var(--cornsilk);
+    background: linear-gradient(135deg, var(--sage-green) 0%, var(--burlywood) 100%);
     color: var(--dark-olive);
     line-height: 1.6;
     overflow-x: hidden;
@@ -172,7 +172,7 @@ body {
 .hero {
     min-height: 700px;
     padding: 0;
-    background: url('Home.png') center center/cover no-repeat;
+    background: url('img/folder/Home.png') center center/cover no-repeat;
     position: relative;
     display: flex;
     align-items: stretch;
@@ -244,7 +244,7 @@ body {
     /* Increased from 1.3rem and 1.2rem */
     color: var(--peru-brown);
     margin-bottom: var(--space-lg);
-    line-height: 1.7;
+    line-height: 1.2;
 }
 
 .hero-text {
@@ -275,8 +275,8 @@ body {
 
 .secondary-button {
     display: inline-block;
-    background: transparent;
-    color: var(--dark-olive);
+    background: var(--warm-white);
+    color: #01311d;
     padding: var(--space-sm) var(--space-lg);
     border: 2px solid var(--sage-green);
     border-radius: var(--radius-md);
@@ -355,15 +355,25 @@ body {
     /* Increased from 1.1rem */
     margin-bottom: var(--space-md);
     color: var(--dark-olive);
-    line-height: 1.8;
+    line-height: 1.2;
 }
 
 .floating-beans {
     position: absolute;
-    right: -100px;
-    top: -60px;
+    right: -60px;
+    top: -40px;
     opacity: 100%;
-    width: 200px;
+    width: 150px;
+    height: auto;
+    animation: float 6s ease-in-out infinite;
+}
+
+.floating-noname {
+    position: absolute;
+    right: 800px;
+    top: -40px;
+    opacity: 100%;
+    width: 300px;
     height: auto;
     animation: float 6s ease-in-out infinite;
 }
@@ -383,7 +393,7 @@ body {
 /* Menu Preview Section */
 .menu-preview {
     padding: var(--space-xxl) 0;
-    background: linear-gradient(45deg, var(--moccasin) 0%, var(--cornsilk) 100%);
+    background: linear-gradient(135deg, var(--sage-green) 0%, var(--burlywood) 100%);
 }
 
 .preview-grid {
@@ -411,7 +421,7 @@ body {
     left: 0;
     right: 0;
     height: 4px;
-    background: linear-gradient(90deg, var(--sage-green), var(--burlywood), var(--peru-brown));
+    background: #006a3e;
 }
 
 .preview-card:hover {
@@ -446,7 +456,7 @@ body {
     font-weight: 700;
     font-size: 1.6rem;
     /* Increased from 1.3rem */
-    color: var(--sage-green);
+    color: black;
 }
 
 .preview-cta {
@@ -972,7 +982,7 @@ body {
 
 /* Footer */
 .footer {
-    background: linear-gradient(135deg, var(--dark-olive) 0%, var(--peru-brown) 100%);
+    background: linear-gradient(135deg, rgb(69, 111, 6) 0%, rgb(1, 66, 34) 100%);
     color: var(--warm-white);
     padding: var(--space-xxl) 0 var(--space-md);
     margin-top: var(--space-xxl);
