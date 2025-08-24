@@ -14,8 +14,8 @@
 }
 
 @font-face {
-    font-family: 'Biro Script Plus';
-    src: url('assets/fonts/biro-script-plus.ttf') format('truetype');
+    font-family: 'Biro Script';
+    src: url('assets/fonts/Biro_Script.otf') format('truetype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -47,9 +47,9 @@
     --hover-shadow: rgba(47, 79, 47, 0.2);
 
     /* Typography */
-    --font-handwritten: 'Biro Script Plus', cursive, Georgia, serif;
-    --font-body: 'Dongle', 'Arial', sans-serif;
-    --font-accent: 'Biro Script Plus', cursive, Georgia, serif;
+    --font-handwritten: 'Biro Script';
+    --font-body: 'Dongle', sans-serif;
+    --font-accent: 'Biro Script';
 
     /* Spacing */
     --space-xs: 0.5rem;
