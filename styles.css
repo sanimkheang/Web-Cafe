@@ -70,7 +70,7 @@ body {
     font-family: var(--font-body);
     font-size: 1.4rem;
     /* Increased base font size for Dongle */
-    background: linear-gradient(135deg, var(--sage-green) 0%, var(--burlywood) 100%);
+    background: white
     color: var(--dark-olive);
     line-height: 1.6;
     overflow-x: hidden;
@@ -306,7 +306,12 @@ body {
 
 /* Page Hero for other pages */
 .page-hero {
-    background: linear-gradient(135deg, var(--sage-green) 0%, var(--light-sage) 100%);
+    min-height: 300;
+    padding: 0;
+    background: url('img/folder/ourstory.png') center center/cover no-repeat;
+    position: relative;
+    display: flex;
+    align-items: stretch;
     padding: var(--space-xl) 0;
     text-align: center;
     color: var(--warm-white);
@@ -314,14 +319,15 @@ body {
 
 .page-title {
     font-family: var(--font-handwritten);
-    font-size: 3.8rem;
-    /* Increased from 3rem */
+    font-size: 4rem;
+    color: var(--dark-olive); /* Changed to dark green */
     margin-bottom: var(--space-sm);
 }
 
 .page-subtitle {
     font-size: 1.5rem;
     /* Increased from 1.2rem */
+    color: black;
     opacity: 0.9;
     max-width: 600px;
     margin: 0 auto;
@@ -354,7 +360,7 @@ body {
     font-size: 1.4rem;
     /* Increased from 1.1rem */
     margin-bottom: var(--space-md);
-    color: var(--dark-olive);
+    color: black;
     line-height: 1.2;
 }
 
@@ -564,31 +570,32 @@ body {
 .team-section:nth-child(odd),
 .info-section:nth-child(odd),
 .values-section:nth-child(odd) {
-    background-color: var(--warm-white);
+    background-color: white;
 }
 
 .about-content {
     max-width: 800px;
     margin: 0 auto;
     text-align: center;
+    background-color: white;
 }
 
 .story-text p {
     font-size: 1.4rem;
     /* Increased from 1.1rem */
     margin-bottom: var(--space-md);
-    color: var(--dark-olive);
-    line-height: 1.8;
+    color: rgb(0, 0, 0);
+    line-height: 1.2;
 }
 
 .team-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    background-color:white;
     gap: var(--space-xl);
 }
 
 .team-member {
-    background-color: var(--warm-white);
+    background: rgb(245, 230, 155);
     border-radius: var(--radius-lg);
     padding: var(--space-lg);
     text-align: center;
@@ -606,19 +613,18 @@ body {
     height: 120px;
     border-radius: 50%;
     margin: 0 auto var(--space-md);
-    border: 4px solid var(--sage-green);
 }
 
 .team-name {
     font-family: var(--font-accent);
     font-size: 1.7rem;
     /* Increased from 1.4rem */
-    color: var(--dark-olive);
+    color: black;
     margin-bottom: var(--space-xs);
 }
 
 .team-role {
-    color: var(--sage-green);
+    color: black;
     font-weight: 600;
     font-size: 1.2rem;
     /* Added explicit font size */
@@ -664,7 +670,7 @@ body {
     display: flex;
     justify-content: space-between;
     padding: var(--space-xs) 0;
-    border-bottom: 1px solid var(--moccasin);
+    border-bottom: 1px solid rgb(15, 87, 1);
     font-size: 1.2rem;
     /* Added explicit font size */
 }
@@ -738,7 +744,7 @@ body {
 }
 
 .value-card {
-    background-color: var(--warm-white);
+    background: linear-gradient(135deg, rgb(255, 248, 143) 10%, rgb(135, 227, 175) 100%);
     border-radius: var(--radius-lg);
     padding: var(--space-lg);
     text-align: center;
@@ -758,7 +764,7 @@ body {
 
 .value-title {
     font-family: var(--font-accent);
-    font-size: 1.3rem;
+    font-size: 2rem;
     color: var(--dark-olive);
     margin-bottom: var(--space-sm);
 }
