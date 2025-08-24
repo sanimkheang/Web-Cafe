@@ -282,6 +282,8 @@ body {
 }
 
 /* Menu Preview Section */
+
+
 .menu-preview {
     padding: var(--space-xxl) 0;
     background: linear-gradient(45deg, var(--moccasin) 0%, var(--cornsilk) 100%);
@@ -351,6 +353,7 @@ body {
 }
 
 /* Menu Styles */
+
 .menu-section {
     padding: var(--space-xxl) 0;
 }
@@ -433,6 +436,21 @@ body {
     font-weight: 700;
     font-size: 1.2rem;
     color: var(--sage-green);
+}
+
+/* Menu Item Hover Effect */
+.menu-content .menu-description,
+.menu-content .menu-price {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 0.3s ease, max-height 0.3s ease;
+}
+
+.menu-item:hover .menu-description,
+.menu-item:hover .menu-price {
+    opacity: 1;
+    max-height: 200px; /* enough space for text */
 }
 
 /* About Page Styles */
